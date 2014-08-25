@@ -4,7 +4,7 @@ python:
 
 before_install:
         - sudo apt-get update -qq
-        - sudo apt-get install -y python-lxml xsltproc
+        - sudo apt-get install -y python-lxml xsltproc openscap openscap-utils
 
 # install: DEPENDENCIES
 
