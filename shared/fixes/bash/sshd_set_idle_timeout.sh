@@ -1,4 +1,6 @@
-source ./templates/support.sh
+# platform = multi_platform_rhel, multi_platform_fedora
+. /usr/share/scap-security-guide/remediation_functions
+declare sshd_idle_timeout_value
 populate sshd_idle_timeout_value
 
 SSHD_CONFIG='/etc/ssh/sshd_config'

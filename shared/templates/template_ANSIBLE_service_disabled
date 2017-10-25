@@ -1,0 +1,15 @@
+# platform = multi_platform_all
+# reboot = false
+# strategy = disable
+# complexity = low
+# disruption = low
+- name: Disable service %SERVICENAME%
+  service:
+    name="{{item}}"
+    enabled="no"
+    state="stopped"
+  with_items:
+    - %DAEMONNAME%
+  tags:
+    @ANSIBLE_TAGS@
+
